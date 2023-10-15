@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        .page {
+            height: 600PX;
+            background-color: #F0F0F0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .content {
+
+            border-top-left-radius: 10PX;
+            border-bottom-left-radius: 10PX;
+            background-color: white;
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            box-shadow: 5px 5px 5px #888888;
+        }
+
+        .content1 {
+
+            border-top-left-radius: 10PX;
+            border-bottom-left-radius: 10PX;
+            width: 600px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        .heading {
+            margin-top: 30px;
+            margin-bottom: 4px;
+
+        }
+
+        .text {
+
+            color: darkgray;
+            font-size: 13px;
+            margin: 10px;
+            margin-bottom: 10px;
+        }
+
+
+
+        .Gsignin {
+            height: 30px;
+            width: 400px;
+            padding: 0%;
+            outline: none;
+            border: 1px solid darkgray;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            margin: 8px;
+            margin-top: 20px;
+            font-size: 12px
+        }
+
+        .forms {
+            margin-right: 0;
+        }
+
+        .title {
+            margin: 0;
+            display: flex;
+            position: relative;
+            /* flex-direction: column; */
+            font-size: 12px;
+            color: darkgray;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            border-radius: 5px;
+
+        }
+
+
+        .title input {
+            display: flex;
+            position: relative;
+            height: 30px;
+            width: 400px;
+            padding: 0%;
+            border: none;
+            border-bottom: 1px solid darkgray;
+            background-color: white;
+            cursor: pointer;
+            margin: 8px;
+            font-size: 12px;
+            transition-duration: 1s;
+            outline: none;
+
+
+        }
+
+        .title label {
+
+            margin: 8px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            transition: .5s;
+        }
+
+        .title input:focus~label,
+        .title input:valid~label {
+            position: absolute;
+            top: -5px;
+        }
+
+
+        .passwordImageContainer{
+            display: flex;
+            height: 16px;
+            width: 16px;
+            margin: 24px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            
+   
+        }
+        .passwordImageContainer input {
+            
+            margin: 0px;
+            height: 14px;
+            width: 14px;
+            
+           
+                
+        }
+
+
+        .password {
+            margin-bottom: 5px;
+        }
+
+
+        .policy {
+            margin-top: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .submit {
+            color: #F0F0F0;
+            height: 30px;
+            width: 200px;
+            padding: 0%;
+            border-radius: 50px;
+            border: 1px solid darkgray;
+            background-color: black;
+            margin: 8px;
+            font-size: 12px;
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 100px;
+
+        }
+
+        .submit:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .text1 {
+            display: flex;
+            color: darkgray;
+
+        }
+
+
+        .content2 {
+
+            height: 500px;
+            width: 400px;
+        }
+
+        .img {
+
+            height: 500px;
+            width: 400px;
+
+        }
+
+        .d-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="content1">
+                <h1 class="heading">Create Your Account</h1>
+                <p class="text">Let's get started with your 30 days free trial</p>
+                <div class="google">
+                    <input type="submit" class="Gsignin" value="Sign up with Google">
+                </div>
+                <form class="forms">
+
+
+
+                    <div class="title">
+                        <input required="true" type="email" class="email" value="" placeholder="">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="title">
+                        <input required="true" type="password" class="password" id="password" value="" placeholder=""/>
+                        <label for="" id="passwordlabel">Password</label>
+                        
+                        <div class="passwordImageContainer">
+                          
+                            <input class="passwordImage" id="check1" type="checkbox"/>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <input required="true" type="password" class="password" id="confirmpassword" value="" placeholder=""/>
+                        <label for="" id="passwordlabel">Confirm Password</label>
+                        
+                        <div class="passwordImageContainer">
+                           
+                            <input class="passwordImage" id="check2" type="checkbox" placeholder="fegr">
+                           
+                           
+                           
+                        </div>
+                    </div>
+                    <div class="policy">
+                        <input type="checkbox" class="checkbox" required="true">
+                        <label for="checkbox"><b>I accept all Terms & policy</b></label>
+
+                    </div>
+                    <input type="submit" class="submit" value="Sign Up">
+
+                </form>
+            </div>
+            <div class="content2">
+                <img class="img"
+                    src="https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                    alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
